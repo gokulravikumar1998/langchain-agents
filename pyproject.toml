@@ -1,0 +1,25 @@
+[project]
+name = "langchain-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "gokulravikumar1998", email = "gokulit1620@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=26.10.1",
+    "dotenv>=0.9.9",
+    "isort>=9.0.2",
+    "langchain>=1.5.0",
+    "langchain-openai>=1.8.0",
+    "langchain-tavily>=0.2.18",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+langchain-agents = "langchain_agents:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
